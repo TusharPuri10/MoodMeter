@@ -28,7 +28,8 @@ This project aims to broaden the scope of social media-based mental health measu
 * ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
 
 ### Design of website
-![design](/DepressiveTweetsAnalysis/Design.png)
+
+![Design](https://user-images.githubusercontent.com/92613357/230445837-970acb89-12e1-4158-861e-d219514654bf.png)
 
 
 
