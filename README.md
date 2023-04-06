@@ -5,13 +5,14 @@
 * ` Model based on Sequential LSTM `
 
 
-The Website uses sentiment analsyis to analyse the tweets and give label 'cheerful' or 'depressive' to the tweet.
-
 ## About The Project
 
-The website uses a trained LSTM model to predict text-based signs of depression from the tweet and give a label according to it.
+This is a Python-based project for analyzing depressive tweets using Natural Language Processing (NLP) techniques. The goal of this project is to explore how people express their emotions related to depression on social media and to identify patterns and trends in their language usage.
 
-This project aims to broaden the scope of social media-based mental health measures and to build an algorithm that can predict text-based signs of depression using existing research that has proven the correlation between depression and specific linguistic features. At the same time I build a website using the same algorithm.
+This project also aims to broaden the scope of social media-based mental health measures and to build an algorithm that can predict text-based signs of depression using existing research that has proven the correlation between depression and specific linguistic features.
+
+## Functionality
+- **Sentiment Analysis**: The tweets which user inputs are analyzed for their sentiment using an LSTM (Long Short-Term Memory) neural network and give label 'cheerful' or 'depressive' to the tweet.
 
 ### Built With
 
@@ -27,7 +28,7 @@ This project aims to broaden the scope of social media-based mental health measu
 * ![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white)
 * ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
 
-#### Dependencies
+### Dependencies
 * Python 3.8.2
 * Tensorflow
 * Keras
@@ -36,6 +37,13 @@ This project aims to broaden the scope of social media-based mental health measu
 ### Design of website
 
 ![Design](https://user-images.githubusercontent.com/92613357/230445837-970acb89-12e1-4158-861e-d219514654bf.png)
+
+
+## Contributing
+If you want to contribute to this project, feel free to submit a pull request. Before doing so, please make sure that your changes are aligned with the project's goals and that they do not break the existing code.
+
+## License
+pending
 
 
 
