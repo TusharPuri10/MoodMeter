@@ -10,7 +10,7 @@ def hello():
     content = request.json
     label_tweet = model.get_label(content['text'])
     tweet = content['text']
-    if label_tweet<0.25:
+    if label_tweet<0.45:
         label_tweet = 0
     else:
         label_tweet = 1
