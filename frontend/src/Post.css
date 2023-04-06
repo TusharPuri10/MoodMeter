@@ -1,0 +1,63 @@
+.post{
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--twitter-background);
+    padding-bottom: 10px;
+}
+.profilepic{
+    margin-bottom:auto;
+    margin-right: 2px;
+    width:24px;
+    height: 0;
+}
+.post__headerText{
+    display: flex;
+}
+.post__headerText > h3{
+    padding-left: 3px;
+}
+.post__headerText > h4{
+    color: #878d8d;
+    margin-top: 7px;
+    padding-left: 3px;
+    font-size: 11px;
+}
+.post__body{
+    flex: 0.8;
+    padding: 10px;
+    width: 50%;
+}
+.post__headerDescription{
+    margin-top: 3px;
+    margin-left:7%;
+    position: relative;
+    word-wrap: break-word;
+    /* word-break: break-all; */
+}
+.Sentiment_positive{
+    /* flex:; */
+    margin-top: 5%;
+    /* margin-right: 2%; */
+    border: 1px solid var(--twitter-background);
+    background-color: #e8feea;
+    border-radius: 25px;
+    color: #1fc42c;
+}
+.Sentiment_positive > p{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.Sentiment_negative{
+    /* flex:; */
+    margin-top: 5%;
+    /* margin-right: 2%; */
+    border: 1px solid var(--twitter-background);
+    background-color: #fee8e8;
+    border-radius: 25px;
+    color: #c41f1f;
+}
+.Sentiment_negative > p{
+    padding-left: 25px;
+    padding-right: 25px;
+}

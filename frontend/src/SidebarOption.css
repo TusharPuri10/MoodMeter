@@ -1,0 +1,23 @@
+.sidebarOption{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 20px;
+}
+.sidebarOption > h2 {
+    font-weight: 800;
+    font-size: 15px;
+    margin-bottom: 4px;
+    padding-top: 5px;
+    padding-left: 16px;
+}
+.sidebarOption:hover{
+    background-color: #e8f5fe;
+    border-radius: 25px;
+    color: var(--twitter-color);
+    transition: color 100ms ease-out;
+}
+
+.sidebarOption--active{
+    color: var(--twitter-color);
+}
