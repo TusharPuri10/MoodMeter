@@ -12,7 +12,7 @@ This is a Python-based project for analyzing depressive tweets using Natural Lan
 This project also aims to broaden the scope of social media-based mental health measures and to build an algorithm that can predict text-based signs of depression using existing research that has proven the correlation between depression and specific linguistic features.
 
 ## Functionality
-**Sentiment Analysis**: The tweets which user inputs are analyzed for their sentiment using an LSTM (Long Short-Term Memory) neural network and give label 'cheerful' or 'depressive' to the tweet.
+The tweets which user inputs are analyzed for their sentiment using an LSTM (Long Short-Term Memory) neural network and give label 'cheerful' or 'depressive' to the tweet.
 
 ### Built With
 
