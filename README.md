@@ -57,17 +57,9 @@ This project aims to broaden the scope of social media-based mental health measu
 * ![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white)
 * ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
 
-### About the Deep Learning Model
+### Design of website
 
 
-![image](https://d1m75rqqgidzqn.cloudfront.net/2019/11/RNN.jpg)
-
-
-Long short-term memory (LSTM) is a deep learning artificial recurrent neural network (RNN) architecture. Unlike traditional feedforward neural networks, LSTM has feedback connections. It can process not only single data points (such as photos), but also complete data sequences (such as speech or video).
-
-![image](https://miro.medium.com/max/1100/1*cnKbQrqg2exJ-5fF6ea0tQ.webp)
-
-I choose LSTM as my model because LSTM are particularly designed to have a long-term “memory” that is capable of understanding the overall context better than other neural networks.
 
 [Material.js]: https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=mui&logoColor=white
 [Material-url]: https://mui.com/
