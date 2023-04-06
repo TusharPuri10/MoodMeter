@@ -1,5 +1,6 @@
 <a name="readme-top"></a>
 # Depression Analysis by Tweets ( Model & Website )
+* ` Depressive Tweets `
 * ` Sentiment Analysis Website `
 * ` Model based on Sequential LSTM `
 
@@ -27,10 +28,10 @@ This project aims to broaden the scope of social media-based mental health measu
 * ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
 
 #### Dependencies
-Python 3.8.2
-Tensorflow
-Keras
-rest of them are listed in requirements.txt
+* Python 3.8.2
+* Tensorflow
+* Keras
+* rest of them are listed in requirements.txt
 
 ### Design of website
 
