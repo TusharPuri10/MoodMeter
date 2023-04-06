@@ -93,7 +93,7 @@ You will need to have the following software installed on your computer:
 If you want to contribute to this project, feel free to submit a pull request. Before doing so, please make sure that your changes are aligned with the project's goals and that they do not break the existing code.
 
 ## License
-pending
+This project is licensed under the MIT License. Feel free to use, modify, and distribute it as you wish.
 
 
 
