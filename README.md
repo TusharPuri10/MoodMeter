@@ -14,6 +14,51 @@ This project also aims to broaden the scope of social media-based mental health 
 ## Functionality
 The tweets which user inputs are analyzed for their sentiment using an LSTM (Long Short-Term Memory) neural network and give label 'cheerful' or 'depressive' to the tweet.
 
+## Getting Started
+
+To use this project, you will need to follow these steps:
+
+### Prerequisites
+
+You will need to have the following software installed on your computer:
+
+- Python 3.8.2
+- Node.js
+- npm
+
+### Installing
+
+1. Clone this repository to your local machine using `git clone https://github.com/TusharPuri10/DepressiveTweetsAnalysis.git`.
+
+2. Navigate to the root directory of the project in your terminal or command prompt.
+
+3. Install the required Python packages by running the following command:
+
+pip install -r requirements.txt
+
+4. Navigate to the `frontend` directory and install the required Node.js packages by running the following command:
+
+npm install
+
+### Running the Application
+
+1. In the 'backend' directory of the project, start the Flask server by running the following command:
+
+python main.py
+
+2. In a separate terminal or command prompt window, navigate to the `frontend` directory and build the React application by running the following command:
+
+npm run build
+
+3. Start the React server by running the following command:
+
+npm start
+
+4. Open your web browser and go to http://localhost:3000/ to access the application.
+
+
+
+
 ### Built With
 
 #### Frontend
