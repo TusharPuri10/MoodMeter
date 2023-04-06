@@ -7,36 +7,6 @@
 
 The Website uses sentiment analsyis to analyse the tweets and give label 'cheerful' or 'depressive' to the tweet.
 
-<details>
-  <summary>Table of Content</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ol>
-        <li><a href="#A">Built With</a></li>
-        <li><a href="#B">About the Deep Learning Model</a></li>
-      </ol>
-    </li>
-    <li>
-      <a href="#D">Project Phases</a>
-      <ol>
-        <li>
-          <a href="#E">Building Model</a>
-          <ol>
-            <li><a href="#F">Gathering Data</a></li>
-            <li><a href="#G">Preprocessing Data</a></li>
-            <li><a href="#H">Building sentiment analysis model</a></li>
-          </ol>
-         </li>
-         <li><a href="#H">Proposed Website Model</a></li>
-      </ol>
-    </li>
-    <li><a href="#I">Challenges Faced</a></li>
-    <li><a href="#J">Future Plan</a></li>
-    <li><a href="#K">References</a></li>
-  </ol>
-</details>
-
 ## About The Project
 
 The website uses a trained LSTM model to predict text-based signs of depression from the tweet and give a label according to it.
@@ -58,7 +28,7 @@ This project aims to broaden the scope of social media-based mental health measu
 * ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
 
 ### Design of website
-![design](https://github.com/TusharPuri10/DepressiveTweetsAnalysis/blob/master/Design.png)
+![design](https://github.com/TusharPuri10/DepressiveTweetsAnalysis/blob/master/Design.png?raw=true)
 
 
 
