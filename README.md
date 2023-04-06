@@ -2,7 +2,6 @@
 # Depression Analysis by Tweets ( Model & Website )
 * ` Sentiment Analysis Website `
 * ` Model based on Sequential LSTM `
-* ` Under Development `
 
 
 The Website uses sentiment analsyis to analyse the tweets and give label 'cheerful' or 'depressive' to the tweet.
@@ -26,6 +25,12 @@ This project aims to broaden the scope of social media-based mental health measu
 * [![Flask][Flask.js]][Flask-url]
 * ![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white)
 * ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
+
+#### Dependencies
+Python 3.8.2
+Tensorflow
+Keras
+rest of them are listed in requirements.txt
 
 ### Design of website
 
