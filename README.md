@@ -18,15 +18,15 @@ The tweets which user inputs are analyzed for their sentiment using an LSTM (Lon
 
 To use this project, you will need to follow these steps:
 
-### Prerequisites
+### 1. Prerequisites
 
 You will need to have the following software installed on your computer:
 
 - Python 3.8.2
 - Node.js
 - npm
-
-### Installing
+<hr>
+### 2. Installing
 
 1. Clone this repository to your local machine using `git clone https://github.com/TusharPuri10/DepressiveTweetsAnalysis.git`.
 
@@ -39,10 +39,10 @@ pip install -r requirements.txt
 4. Navigate to the `frontend` directory and install the required Node.js packages by running the following command:
 
 npm install
+<hr>
+### 3. Running the Application
 
-### Running the Application
-
-1. In the 'backend' directory of the project, start the Flask server by running the following command:
+1. In the `backend` directory of the project, start the Flask server by running the following command:
 
 python main.py
 
@@ -55,7 +55,7 @@ npm run build
 npm start
 
 4. Open your web browser and go to http://localhost:3000/ to access the application.
-
+<hr>
 
 
 
