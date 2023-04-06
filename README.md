@@ -5,7 +5,7 @@
 * ` Model based on Sequential LSTM `
 
 
-## About The Project
+# About The Project
 
 This is a Python-based project for analyzing depressive tweets using Natural Language Processing (NLP) techniques. The goal of this project is to explore how people express their emotions related to depression on social media and to identify patterns and trends in their language usage.
 
@@ -14,7 +14,7 @@ This project also aims to broaden the scope of social media-based mental health 
 ## Functionality
 The tweets which user inputs are analyzed for their sentiment using an LSTM (Long Short-Term Memory) neural network and give label 'cheerful' or 'depressive' to the tweet.
 
-## Getting Started
+# Getting Started
 
 To use this project, you will need to follow these steps:
 
@@ -38,26 +38,26 @@ You will need to have the following software installed on your computer:
 
 3. Install the required Python packages by running the following command:
 
-`pip install -r requirements.txt`
+* `pip install -r requirements.txt`
 
 4. Navigate to the 'frontend' directory and install the required Node.js packages by running the following command:
 
-`npm install`
+* `npm install`
 <hr>
 
 ### 3. Running the Application
 
 1. In the 'backend' directory of the project, start the Flask server by running the following command:
 
-`python main.py`
+* `python main.py`
 
 2. In a separate terminal or command prompt window, navigate to the 'frontend' directory and build the React application by running the following command:
 
-`npm run build`
+* `npm run build`
 
 3. Start the React server by running the following command:
 
-`npm start`
+* `npm start`
 
 4. Open your web browser and go to http://localhost:3000/ to access the application.
 <hr>
