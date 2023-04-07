@@ -32,7 +32,8 @@ You will need to have the following software installed on your computer:
 
 ### 2. Installing
 
-1. Clone this repository to your local machine using `git clone https://github.com/TusharPuri10/DepressiveTweetsAnalysis.git`.
+1. Clone this repository to your local machine using
+* `git clone https://github.com/TusharPuri10/DepressiveTweetsAnalysis.git`.
 
 2. Navigate to the root directory of the project in your terminal or command prompt.
 
