@@ -37,7 +37,7 @@ You will need to have the following software installed on your computer:
 
 2. Navigate to the root directory of the project in your terminal or command prompt.
 
-3. Install the required Python packages by running the following command:
+3. Set up a virtual environment. See [here](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/) for more details. Don't forget to activate the virtual environment and then Install the required Python packages by running the following command:
 
 * `pip install -r requirements.txt`
 
