@@ -1,14 +1,6 @@
 <a name="readme-top"></a>
 # Depression Analysis by Tweets ( Model & Website )
-* ` Depressive Tweets `
-* ` Sentiment Analysis Website `
-* ` Model based on Sequential LSTM `
-
-
-
 https://github.com/TusharPuri10/DepressiveTweetsAnalysis/assets/92613357/9c724ca9-058b-461c-a950-ef9f0fc0bdcf
-
-
 
 # About The Project
 
