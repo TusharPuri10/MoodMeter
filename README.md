@@ -4,7 +4,11 @@
 * ` Sentiment Analysis Website `
 * ` Model based on Sequential LSTM `
 
-[![Watch the video](https://img.youtube.com/vi/Q7uNHR1JHxk/0.jpg)](https://www.youtube.com/watch?v=Q7uNHR1JHxk)
+
+
+https://github.com/TusharPuri10/DepressiveTweetsAnalysis/assets/92613357/9c724ca9-058b-461c-a950-ef9f0fc0bdcf
+
+
 
 # About The Project
 
