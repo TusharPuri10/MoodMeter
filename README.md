@@ -4,7 +4,7 @@
 * ` Sentiment Analysis Website `
 * ` Model based on Sequential LSTM `
 
-[![Watch the video](https://dms.licdn.com/playlist/vid/D4D05AQFYaJFE9fai7w/mp4-640p-30fp-crf28/0/1680806177852?e=2147483647&v=beta&t=bj_XtGiag8DT0psXJbtECVHFDoN_5GgQnzicqZtLWpU)
+[![Watch the video](https://dms.licdn.com/playlist/vid/D4D05AQFYaJFE9fai7w/mp4-640p-30fp-crf28/0/1680806177852?e=2147483647&v=beta&t=bj_XtGiag8DT0psXJbtECVHFDoN_5GgQnzicqZtLWpU)]
 
 # About The Project
 
