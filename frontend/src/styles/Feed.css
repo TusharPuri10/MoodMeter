@@ -1,8 +1,6 @@
 .feed{
     flex:0.7;
     border-right: 1px solid var(--twitter-background);
-    /* min-width: fit-content; */
-    padding-right: 15%;
     overflow-y:  scroll;
 }
 /* Hide scrollbar for chrome,safari and opera */
@@ -48,7 +46,6 @@
     /* height: 30px; */
     /* margin-top:18px;  */
     margin-left: auto;
-    margin-right: 1%;
 }
 .search_tweetButton:hover{
     background-color: #e8eefaf3;

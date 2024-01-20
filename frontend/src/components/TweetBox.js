@@ -1,5 +1,5 @@
 import React , {useState} from 'react'
-import "./TweetBox.css"
+import "../styles/TweetBox.css"
 import  {CButton} from '@coreui/react'
 import db from './Firebase'
 import axios from "axios";
