@@ -1,10 +1,10 @@
 <a name="readme-top"></a>
-# Depression Analysis by Tweets ( Model & Website )
+# MoodMeter: Depressive Tweet Analysis ( Model & Website )
 https://github.com/TusharPuri10/DepressiveTweetsAnalysis/assets/92613357/9c724ca9-058b-461c-a950-ef9f0fc0bdcf
 
 # About The Project
 
-This is a Python-based project for analyzing depressive tweets using Natural Language Processing (NLP) techniques. The goal of this project is to explore how people express their emotions related to depression on social media and to identify patterns and trends in their language usage.
+MoodMeter is a project for analyzing depressive tweets using Natural Language Processing (NLP) techniques. The goal of this project is to explore how people express their emotions related to depression on social media and to identify patterns and trends in their language usage.
 
 This project also aims to broaden the scope of social media-based mental health measures and to build an algorithm that can predict text-based signs of depression using existing research that has proven the correlation between depression and specific linguistic features.
 
