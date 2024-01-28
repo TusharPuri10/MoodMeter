@@ -3,9 +3,6 @@ body{
   --twitter-background: #e6ecf0;
 }
 .App{
-  display: flex;
-  height: 100vh;
-  width: 100vw;
-  margin-left: 5%;
-  margin-right: 10%;
+  width: auto;
+  height: auto;
 }

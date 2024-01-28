@@ -1,0 +1,77 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 2rem;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-title {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.hero-image {
+    max-width: 50%;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 4rem;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-button {
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    background-color: #50a3f7;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .hero-button:hover {
+    background-color: #3a8af4;
+  }
+
+  
+.custom-shape-divider-top-1706428842 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  
+  .custom-shape-divider-top-1706428842 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 80px;
+  }
+  
+  .custom-shape-divider-top-1706428842 .shape-fill {
+    fill: #50a3f7;
+  }

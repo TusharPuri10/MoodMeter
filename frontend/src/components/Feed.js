@@ -1,22 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Component } from "react";
 import "../styles/Feed.css";
 import TweetBox from "./TweetBox";
-import Post from "../styles/Post.css";
+import Post from "./Post"
 // import { CIcon } from "@coreui/icons-react";
 import { cilSearch } from "@coreui/icons";
 import { CButton } from "@coreui/react";
 import db from "./Firebase";
 import axios from "axios";
 import CIcon from '@coreui/icons-react'
-import { FaXTwitter } from "react-icons/fa6";
+// import { FaXTwitter } from "react-icons/fa6";
+import { FaTwitter } from "react-icons/fa6";
 import { cilHome } from '@coreui/icons'
 import { cilCode } from '@coreui/icons'
 import SidebarOption from './SidebarOption'
 import '../styles/Sidebar.css'
+import { useNavigate } from "react-router";
 
 function Feed() {
   const [Username, setUsername] = useState("");
-
+  const navigate = useNavigate();
   const sendUsername = async (e) => {
     e.preventDefault();
 
@@ -58,9 +60,10 @@ function Feed() {
   return (
     <div className="App">
       <div className="sidebar">
-        <div className="twitter_icon"><FaXTwitter size="xl"/></div>
-        <SidebarOption Icon={cilHome} text="Home" route="/home" />
-        <SidebarOption Icon={cilCode} text="About project" route="/about"/>
+        {/* <div className="twitter_icon" onClick={()=>navigate("/")}><FaXTwitter size="xl"/></div> */}
+        <div className="twitter_icon" onClick={()=>navigate("/")}><FaTwitter size="xl"/></div>
+        <SidebarOption Icon={cilHome} text="Home" route="/v1/home" />
+        <SidebarOption Icon={cilCode} text="About project" route="/v1/about"/>
       </div>
       <div className="feed">
         {/*Header */}

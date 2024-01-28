@@ -9,6 +9,7 @@ app = Flask(__name__)
 def hello():
     content = request.json
     label_tweet = model.get_label(content['text'])
+    print("label is ", label_tweet)
     tweet = content['text']
     if label_tweet<0.45:
         label_tweet = 0

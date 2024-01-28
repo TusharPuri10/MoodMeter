@@ -1,7 +1,10 @@
 .feed{
-    flex:0.7;
     border-right: 1px solid var(--twitter-background);
     overflow-y:  scroll;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40rem;
+    padding-left: 2rem;
 }
 /* Hide scrollbar for chrome,safari and opera */
 .feed::-webkit-scrollbar{
@@ -20,7 +23,6 @@
     top: 0;
     background-color: white;
     z-index: 100;
-    border: 1px solid var(--twitter-background);
     padding: 15px 20px
 }
 .feed__header > input{

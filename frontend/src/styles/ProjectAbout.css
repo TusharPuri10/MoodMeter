@@ -1,0 +1,16 @@
+.about {
+    padding: 4rem 0;
+    background-color: #f5f5f5;
+  }
+  
+  .about-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }

@@ -3,6 +3,8 @@ from copy import deepcopy
 from tensorflow.keras.models import load_model
 
 import nltk
+nltk.download('wordnet')
+nltk.download('stopwords')
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
@@ -57,6 +59,7 @@ def message_to_word_vectors(message,word_dict=words):
 
 
 def pad_X(X, desired_sequence_length=40):
+  print(X)
   X_copy = deepcopy(X)
 
   for i, x in enumerate(X):
@@ -70,6 +73,7 @@ def pad_X(X, desired_sequence_length=40):
   return np.array(X_copy).astype(float)
 
 def get_label(tweet):
+  print(tweet)
   return model.predict(pad_X([message_to_word_vectors(tweet)]))[0][0]
 
 # print(get_label("i am now free from depression"))

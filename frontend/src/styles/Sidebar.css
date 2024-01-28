@@ -6,9 +6,10 @@
 .sidebar{
     border-right: 1px solid var(--twitter-background);
     padding-bottom: 39%;
-    flex: 0.18;
     margin-top: 20px;
-    padding-right: 2%;
+    position: fixed;
+    padding-right: 4.3rem;
+    padding-left: 4rem;
 }
 .twitter_icon{
     

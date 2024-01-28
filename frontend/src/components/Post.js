@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Post.css"
+import "../styles/Post.css"
 import CIcon from '@coreui/icons-react'
 import { cilUser } from '@coreui/icons'
 function Post({
