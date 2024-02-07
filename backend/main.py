@@ -12,9 +12,9 @@ def hello():
     print("label is ", label_tweet)
     tweet = content['text']
     if label_tweet<0.45:
-        label_tweet = 0
+        label_tweet = '0'
     else:
-        label_tweet = 1
+        label_tweet = '1'
     
     result = {
         "displayName" : "Tushar",
@@ -33,7 +33,7 @@ def hello2():
     for i in range(10):
         tweet = list_of_tweets[i][1]
         label_tweet = model.get_label(tweet)
-        if label_tweet<0.3:
+        if label_tweet<0.1:
             label_tweet = 0
         else:
             label_tweet = 0
@@ -51,6 +51,4 @@ def hello2():
 
         return jsonify(final_result)
     
-
-if __name__ == '__main__':
     app.run(debug=True)

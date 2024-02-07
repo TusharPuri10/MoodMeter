@@ -1,14 +1,12 @@
-import React, { useState, useEffect, Component } from "react";
+import React, { useState, useEffect} from "react";
 import "../styles/Feed.css";
 import TweetBox from "./TweetBox";
 import Post from "./Post"
-// import { CIcon } from "@coreui/icons-react";
 import { cilSearch } from "@coreui/icons";
 import { CButton } from "@coreui/react";
 import db from "./Firebase";
 import axios from "axios";
 import CIcon from '@coreui/icons-react'
-// import { FaXTwitter } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa6";
 import { cilHome } from '@coreui/icons'
 import { cilCode } from '@coreui/icons'

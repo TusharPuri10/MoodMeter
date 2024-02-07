@@ -10,7 +10,7 @@ function Post({
 }) {
 
   function checksentiment() {
-    if (label == 0)
+    if (label === '0')
     {
       return (
       <div className="Sentiment_positive">

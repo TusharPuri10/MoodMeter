@@ -8,9 +8,6 @@ function App() {
   return (
     // BEM
       <div className="App">
-
-
-
       {/* Feed */}
       <BrowserRouter basename="/">
           <Routes>
@@ -20,15 +17,6 @@ function App() {
             <Route path="/v2" element={<V2/>} />
           </Routes>
       </BrowserRouter>
-
-      {/* if About Project click */}
-      {/* <Aboutproject/> */}
-
-      {/* if About Developer click */}
-      {/* <AboutDeveloper/> */}
-
-      {/* if Future plan click */}
-      {/* <FuturePlan/> */}
 
     </div>
   );

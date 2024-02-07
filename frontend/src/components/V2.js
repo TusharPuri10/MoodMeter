@@ -1,15 +1,15 @@
 import { useNavigate } from "react-router";
 import { FaXTwitter } from "react-icons/fa6";
-import React, { useState, useEffect, Component } from "react";
+import React from "react";
 import "../styles/Feed.css";
 import TweetBox from "./TweetBox";
 import Post from "./Post"
 import { cilSearch } from "@coreui/icons";
 import { CButton } from "@coreui/react";
 import CIcon from '@coreui/icons-react'
-import { cilHome } from '@coreui/icons'
-import { cilCode } from '@coreui/icons'
-import SidebarOption from './SidebarOption'
+// import { cilHome } from '@coreui/icons'
+// import { cilCode } from '@coreui/icons'
+// import SidebarOption from './SidebarOption'
 import '../styles/Sidebar.css'
 
 const V2 = () => {
@@ -54,13 +54,13 @@ const V2 = () => {
           <Post
             displayName='TusharPuri'
             userName='TusharP78096727'
-            text='User authentication'
+            text='Using Synthetic Minority Oversampling Technique (SMOTE) in new model, particularly SMOTE + ENN to tackle imbalanced datasets'
             label='0'
           />
-          <Post
+           <Post
             displayName='TusharPuri'
             userName='TusharP78096727'
-            text='Using Synthetic Minority Oversampling Technique (SMOTE) in new model, particularly SMOTE + ENN to tackle imbalanced datasets'
+            text='Use the newly collected data from version 1 to train the model'
             label='0'
           />
           <Post
