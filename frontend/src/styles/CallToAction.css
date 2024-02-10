@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4rem 0;
+  padding: 3.2rem 1rem;
   background-color: #333;
   color: #333333;
   text-align: center;
@@ -11,7 +11,6 @@
 }
 
 .cta-title {
-  font-size: 2rem;
   margin-bottom: 1rem;
   color: #FFF;
 }
@@ -24,6 +23,7 @@
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  
 }
 
 .cta-button:hover {
@@ -31,5 +31,10 @@
 }
 
 .cta-image {
-  margin-left: 2rem;
+  max-width: 50%;
+}
+
+.cta-image img {
+  max-width: 80%;
+  height: auto;
 }
