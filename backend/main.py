@@ -9,12 +9,13 @@ app = Flask(__name__)
 def hello():
     content = request.json
     label_tweet = model.get_label(content['text'])
+    print("text is ", content['text'])
     print("label is ", label_tweet)
     tweet = content['text']
-    if label_tweet<0.45:
-        label_tweet = '0'
-    else:
-        label_tweet = '1'
+    if label_tweet<0.45:    # cheerful
+        label_tweet = 0
+    else:                   # depressive
+        label_tweet = 1
     
     result = {
         "displayName" : "Tushar",

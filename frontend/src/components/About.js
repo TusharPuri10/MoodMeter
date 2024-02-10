@@ -12,6 +12,16 @@ function About() {
   const navigate = useNavigate();
   return (
     <div className="App">
+      <div class="content">
+        <div class="basic-marquee basic-marquee">
+          <p>
+            The model is going to be deployed on EC2 instance next week 🖥️,  after that version 1 will be launched for data collection. Stay tuned for more updates. ✨ &nbsp; &nbsp;
+            The model is going to be deployed on EC2 instance next week 🖥️,  after that version 1 will be launched for data collection. Stay tuned for more updates. ✨ &nbsp; &nbsp;
+            The model is going to be deployed on EC2 instance next week 🖥️,  after that version 1 will be launched for data collection. Stay tuned for more updates. ✨ &nbsp; &nbsp;
+            The model is going to be deployed on EC2 instance next week 🖥️, after that version 1 will be launched for data collection. Stay tuned for more updates. ✨ &nbsp; &nbsp;
+          </p>
+        </div>
+      </div>
       <div className="sidebar">
         {/* <div className="twitter_icon" onClick={()=>navigate("/")}><FaXTwitter size="xl"/></div> */}
         <div className="twitter_icon" onClick={()=>navigate("/")}><FaTwitter size="xl"/></div>
