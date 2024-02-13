@@ -48,11 +48,11 @@ const ProjectInfo = () => {
       <h2>GitHub Repository</h2>
       <p>
         <a
-          href="https://github.com/TusharPuri10/DepressiveTweetsAnalysis"
+          href="https://github.com/TusharPuri10/MoodMeter"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Depression-Analysis-by-Tweets-Model-Website
+          MoodMeter
         </a>
       </p>
     </div>

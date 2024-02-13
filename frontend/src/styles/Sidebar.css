@@ -5,16 +5,18 @@
 }
 .sidebar{
     border-right: 1px solid var(--twitter-background);
-    padding-bottom: 39%;
-    margin-top: 20px;
-    position: fixed;
-    padding-right: 4.3rem;
-    padding-left: 4rem;
+    margin-left: 5rem;
+    flex: 20%;
 }
 .twitter_icon{
-    
     width:40px;
     height:40px;
-    margin-left: 15px;
-    margin-bottom: 15px;
+    margin: 2rem 1rem;
+}
+
+@media screen and (max-width: 767px) {
+    .sidebar{
+        margin-left: 0;
+    }
+    
 }

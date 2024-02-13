@@ -56,9 +56,9 @@ function Feed() {
     });
   }, []);
   return (
-    <div className="App">
+    <div>
       <div class="content">
-        <div class="basic-marquee basic-marquee">
+        <div class="basic-marquee">
            <p>
               The model is going to be deployed on EC2 instance next week 🖥️,  after that version 1 will be launched for data collection. Stay tuned for more updates. ✨ &nbsp; &nbsp;
               The model is going to be deployed on EC2 instance next week 🖥️,  after that version 1 will be launched for data collection. Stay tuned for more updates. ✨ &nbsp; &nbsp;
@@ -67,46 +67,48 @@ function Feed() {
             </p> 
         </div>
       </div>
-      <div className="sidebar">
-        {/* <div className="twitter_icon" onClick={()=>navigate("/")}><FaXTwitter size="xl"/></div> */}
-        <div className="twitter_icon" onClick={()=>navigate("/")}><FaTwitter size="xl"/></div>
-        <SidebarOption Icon={cilHome} text="Home" route="/v1/home" />
-        <SidebarOption Icon={cilCode} text="About project" route="/v1/about"/>
-      </div>
-      <div className="feed">
-        {/*Header */}
-        <div className="feed__header">
-          <h2>Home</h2>
-          <CButton
-            type="submit"
-            onClick={sendUsername}
-            className="search_tweetButton"
-            color="primary"
-            shape="rounded-pill"
-          >
-            <div className="search_icon">
-              <CIcon icon={cilSearch} size="sm" />
-            </div>
-          </CButton>
-          <input
-            onChange={(e) => setUsername(e.target.value)}
-            value={Username}
-            type="text"
-            placeholder="Enter Username"
-          />
+      <div className="main">
+        <div className="sidebar">
+          {/* <div className="twitter_icon" onClick={()=>navigate("/")}><FaXTwitter size="xl"/></div> */}
+          <div className="twitter_icon" onClick={()=>navigate("/")}><FaTwitter size="xl"/></div>
+          <SidebarOption Icon={cilHome} text="Home" route="/v1/home" />
+          <SidebarOption Icon={cilCode} text="About project" route="/v1/about"/>
         </div>
+        <div className="feed">
+          {/*Header */}
+          <div className="feed__header">
+            <h2>Home</h2>
+            <CButton
+              type="submit"
+              onClick={sendUsername}
+              className="search_tweetButton"
+              color="primary"
+              shape="rounded-pill"
+            >
+              <div className="search_icon">
+                <CIcon icon={cilSearch} size="sm" />
+              </div>
+            </CButton>
+            <input
+              onChange={(e) => setUsername(e.target.value)}
+              value={Username}
+              type="text"
+              placeholder="Enter Username"
+            />
+          </div>
 
-        {/* TweetBox */}
-        <TweetBox />
+          {/* TweetBox */}
+          <TweetBox />
 
-        {posts.map((post) => (
-          <Post
-            displayName={post.displayName}
-            userName={post.userName}
-            text={post.text}
-            label={post.label}
-          />
-        ))}
+          {posts.map((post) => (
+            <Post
+              displayName={post.displayName}
+              userName={post.userName}
+              text={post.text}
+              label={post.label}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

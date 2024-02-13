@@ -35,29 +35,35 @@
     /* word-break: break-all; */
 }
 .Sentiment_positive{
-    /* flex:; */
-    margin-top: 5%;
-    /* margin-right: 2%; */
     border: 1px solid var(--twitter-background);
     background-color: #e8feea;
     border-radius: 25px;
     color: #1fc42c;
+    margin: auto 0;
 }
 .Sentiment_positive > p{
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 0 1rem;
 }
 
 .Sentiment_negative{
-    /* flex:; */
-    margin-top: 5%;
-    /* margin-right: 2%; */
     border: 1px solid var(--twitter-background);
     background-color: #fee8e8;
     border-radius: 25px;
     color: #c41f1f;
+    margin: auto 0;
 }
 .Sentiment_negative > p{
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 0 0.5rem;
+}
+
+@media screen and (max-width: 767px) {
+    .post__headerText > h4 {
+        display: none;
+    }
+    .post__headerText > h3 {
+        font-size: 1rem;
+    }
+    .profilepic{
+        display: none;
+    }
 }

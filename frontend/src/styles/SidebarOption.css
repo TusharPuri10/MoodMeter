@@ -3,6 +3,7 @@
     align-items: center;
     cursor: pointer;
     padding: 20px;
+    margin: 0.5rem;
 }
 .sidebarOption > h2 {
     font-weight: 800;
@@ -20,4 +21,10 @@
 
 .sidebarOption--active{
     color: var(--twitter-color);
+}
+
+@media (max-width: 767px) {
+    .sidebarOption > h2 {
+        display: none;
+    }
 }
