@@ -1,5 +1,6 @@
 .feed{
     border-right: 1px solid var(--twitter-background);
+    border-left: 1px solid var(--twitter-background);
     overflow-y:  scroll;
     flex: 80%;
 }
@@ -60,7 +61,8 @@
     height: 24px;
     position: relative;
     overflow: hidden;
-    border: 1px solid #e8eefaf3;
+    border: 1px solid var(--twitter-background);
+    z-index: 100;
 }
 
 .basic-marquee {
@@ -84,7 +86,7 @@
 }
 
 .extra {
-    flex: 50%;
+    width: 30%;
 }
 
 .main{
@@ -95,9 +97,28 @@
 
 @media screen and (max-width: 767px) {
     .basic-marquee {
-        animation: marquee 10s linear infinite;
+        animation: marquee 16s linear infinite;
     }
-    .feed__header > h2 {
+    .extra {
         display: none;
     }
+    .feed__header {
+        display: none;
+    }
+    @keyframes marquee {
+        0% {
+            transform: translateX(10vw);
+        }
+        100% {
+            transform: translateX(-200vw); /* Move off screen to the left */
+        }
+    }
+    .content {
+        background-color: var(--twitter-background);
+    }
+
+}
+
+.fixed {
+    position: fixed;
 }

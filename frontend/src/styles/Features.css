@@ -35,3 +35,12 @@
     color: #666;
     line-height: 1.5;
   }
+
+  @media screen and (max-width: 768px){
+    .features-item-content {
+      font-size: small;
+    }
+    .features-item-title {
+      font-size: medium;
+    }
+  }

@@ -1,0 +1,54 @@
+.navbar
+{
+    background-color: var(--twitter-background);
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media screen and (min-width: 767px)
+{
+    .navbar
+    {
+        display: none;
+    }
+}
+  
+  .button {
+    outline: 0 !important;
+    border: 0 !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+  }
+
+  .button--active {
+    outline: 0 !important;
+    border: 0 !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--twitter-color);
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+  }
+  
+  .icon {
+    font-size: 20px;
+  }

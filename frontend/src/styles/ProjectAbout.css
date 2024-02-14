@@ -19,3 +19,11 @@
     text-align: center;
     font-size: large;
   }
+
+  @media screen and (max-width: 768px){
+    .about-content {
+      font-size: small;
+      margin: 1rem 1.5rem;
+    }
+    
+  }

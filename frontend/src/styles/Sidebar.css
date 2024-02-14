@@ -4,8 +4,8 @@
     height:10px;
 }
 .sidebar{
-    border-right: 1px solid var(--twitter-background);
-    margin-left: 5rem;
+    margin-left: 8rem;
+    margin-right: 2rem;
     flex: 20%;
 }
 .twitter_icon{
@@ -16,7 +16,7 @@
 
 @media screen and (max-width: 767px) {
     .sidebar{
-        margin-left: 0;
+        display: none;
     }
     
 }

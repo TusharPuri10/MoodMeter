@@ -41,7 +41,6 @@ function TweetBox() {
 
   return (
     <div className="tweetBox">
-      <form>
         <div className="tweetBox__input">
             <input 
             onChange={(e) => setTweetMessage(e.target.value)}
@@ -49,8 +48,9 @@ function TweetBox() {
             type="text" 
             placeholder="What's happening?" />
         </div>
-        <CButton type="submit" onClick={sendTweetMessage} className="tweetbox_tweetButton" color="primary" shape="rounded-pill">Tweet</CButton>
-      </form>
+        <div className="tweetbox_tweetButton">
+            <CButton type="submit" onClick={sendTweetMessage} color="primary" shape="rounded-pill">Tweet</CButton>
+        </div>
     </div>
   )
 }
