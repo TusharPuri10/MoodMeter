@@ -15,6 +15,7 @@ backend/glove.6B.50d.txt
 
 # production
 /build
+.pem
 
 # misc
 .DS_Store
