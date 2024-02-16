@@ -15,6 +15,7 @@ import '../styles/Sidebar.css'
 import { useNavigate } from "react-router";
 import Navbar from "./Navbar";
 import Topbar from "./Topbar";
+import { SignOutButton, UserButton } from "@clerk/clerk-react";
 
 function Feed() {
   const [Username, setUsername] = useState("");
@@ -101,23 +102,25 @@ function Feed() {
               type="text"
               placeholder="Enter Username"
             />
+            <UserButton afterSignOutUrl="http://localhost:3000/" className="userprofile"/>
           </div>
 
           {/* TweetBox */}
           <TweetBox />
 
-          {posts.map((post) => (
+          {posts.sort((a, b) => b.time - a.time).map((post) => (
             <Post
               displayName={post.displayName}
-              userName={post.userName}
               text={post.text}
               label={post.label}
+              imageURL={post.imageURL}
             />
           ))}
         </div>
         {/* Navbar */}
         <Navbar />
-        <div className="extra"></div>
+        <div className="extra">
+        </div>
       </div>
     </div>
   );

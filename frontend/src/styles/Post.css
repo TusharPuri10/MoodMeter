@@ -4,23 +4,18 @@
     border-bottom: 1px solid var(--twitter-background);
     padding-bottom: 10px;
 }
-.profilepic{
+.profilepic > img{
     margin-bottom:auto;
     margin-right: 2px;
-    width:24px;
-    height: 0;
+    width:2rem;
+    height:2rem;
+    border-radius: 50%;
 }
 .post__headerText{
     display: flex;
 }
 .post__headerText > h3{
     padding-left: 3px;
-}
-.post__headerText > h4{
-    color: #878d8d;
-    margin-top: 7px;
-    padding-left: 3px;
-    font-size: 11px;
 }
 .post__body{
     flex: 0.8;
@@ -57,13 +52,7 @@
 }
 
 @media screen and (max-width: 767px) {
-    .post__headerText > h4 {
-        display: none;
-    }
     .post__headerText > h3 {
         font-size: 1rem;
-    }
-    .profilepic{
-        display: none;
     }
 }

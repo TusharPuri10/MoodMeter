@@ -1,20 +1,17 @@
 import React from 'react'
 import "../styles/Post.css"
-import CIcon from '@coreui/icons-react'
-import { cilUser } from '@coreui/icons'
 function Post({
     displayName,
-    userName,
     text,
-    label
+    label,
+    imageURL
 }) {
-
   function checksentiment() {
     if (label === 0 || label === '0')
     {
       return (
       <div className="Sentiment_positive">
-        <p>Cheerful</p>
+        <p>Positive</p>
       </div>
       )
     }
@@ -32,13 +29,10 @@ function Post({
     <div className="post">
       <div className='post__body'>
         <div className='post__headerText'>
-            <div className='profilepic'><CIcon icon={cilUser} size="sm"></CIcon></div>
+            <div className='profilepic'><img src={imageURL} alt='pfp'/></div>
             <h3>
                 {displayName}
             </h3>
-            <h4>
-                @{userName}
-            </h4>
         </div>
 
         <div className='post__headerDescription'>

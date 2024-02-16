@@ -9,8 +9,6 @@ app = Flask(__name__)
 def hello():
     content = request.json
     label_tweet = model.get_label(content['text'])
-    print("text is ", content['text'])
-    print("label is ", label_tweet)
     tweet = content['text']
     if label_tweet<0.45:    # cheerful
         label_tweet = 0
@@ -18,9 +16,6 @@ def hello():
         label_tweet = 1
     
     result = {
-        "displayName" : "Tushar",
-        "userName" : "tushakasfj",
-        "text" : tweet,
         "label" : label_tweet
     }
     return jsonify(result)
@@ -39,9 +34,6 @@ def hello2():
         else:
             label_tweet = 0
         result = {
-        "displayName" : tweet,
-        "username" : username,
-        "text" : tweet,
         "label" : label_tweet
         }
         post_list.append(jsonify(result))

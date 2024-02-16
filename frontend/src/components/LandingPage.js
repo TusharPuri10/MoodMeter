@@ -4,9 +4,11 @@ import Features from './Features';
 import ProjectAbout from './ProjectAbout';
 import CallToAction from './CallToAction';
 import { useNavigate } from "react-router-dom";
+import { useUser } from '@clerk/clerk-react';
 
 export function LandingPage() {
   const navigate = useNavigate();
+  const user = useUser();
   return (
     <div className='custom-background'>
       <Hero
@@ -17,6 +19,7 @@ export function LandingPage() {
           { text: 'v1', onClick: () => navigate('/v1/home')},
           // { text: 'v2', onClick: () => navigate('/v2')},
         ]}
+        user={user}
       />
 
       <Features

@@ -1,18 +1,32 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../styles/Hero.css';
+import { SignInButton } from '@clerk/clerk-react';
 
-const Hero = ({ title, subtitle, image, buttons }) => (
+const Hero = ({ title, subtitle, image, buttons, user}) => (
   <section className="hero">
     <div className="hero-content">
       <h1 className="hero-title">{title}</h1>
       <p className="hero-subtitle">{subtitle}</p>
       <div className="hero-buttons">
-        {buttons.map((button, index) => (
-          <button key={index} className="hero-button" style={{ backgroundColor: '#50a3f7' }} onClick={button.onClick}>
-            {button.text}
-          </button>
-        ))}
+        {user.isSignedIn ? (
+          buttons.map((button, index) => (
+            <button
+              key={index}
+              className="hero-button"
+              style={{ backgroundColor: '#50a3f7' }}
+              onClick={button.onClick}
+            >
+              {button.text}
+            </button>
+          ))
+        ) : (
+          <SignInButton
+            style={{ backgroundColor: '#50a3f7' }}
+            className="hero-button"
+            redirectUrl="http://localhost:3000/v1/home"
+          />
+        )}
       </div>
     </div>
     <div className="hero-image">

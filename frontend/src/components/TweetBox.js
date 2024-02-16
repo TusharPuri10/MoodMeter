@@ -3,8 +3,10 @@ import "../styles/TweetBox.css"
 import  {CButton} from '@coreui/react'
 import db from './Firebase'
 import axios from "axios";
+import {useUser} from "@clerk/clerk-react";
 
 function TweetBox() {
+  const { user } = useUser();
   const [tweetMessage, setTweetMessage] = useState("");
 
   const sendTweetMessage = e => {
@@ -13,20 +15,18 @@ function TweetBox() {
 //  ssssssssssssssssssssssssssssssss
   axios.post("/tweet",
     {
-      displayName : "Tushar",
-      userName : "tushakasfj",
       text : tweetMessage,
-      label : 0
   }
   )
   .then((response) => {
     const res =response.data
     if(response.status === 200){
       db.collection('posts').add({
-        displayName: 'Tushar Puri',
-        userName: 'TusharP78096727',
+        displayName: user.fullName,
         text: tweetMessage,
-        label: res.label
+        label: res.label,
+        time: new Date(),
+        imageURL: user.imageUrl
       })
     }
   }).catch((error) => {
@@ -46,7 +46,13 @@ function TweetBox() {
             onChange={(e) => setTweetMessage(e.target.value)}
             value={tweetMessage} 
             type="text" 
-            placeholder="What's happening?" />
+            placeholder="What's happening?"
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                sendTweetMessage(e);
+              }
+            }}
+             />
         </div>
         <div className="tweetbox_tweetButton">
             <CButton type="submit" onClick={sendTweetMessage} color="primary" shape="rounded-pill">Tweet</CButton>
