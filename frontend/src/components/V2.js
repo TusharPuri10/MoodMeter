@@ -33,30 +33,30 @@ const V2 = () => {
         </div>
         <div className="feed">
           {/*Header */}
-          <div className="feed__header">
-            <h2>Home</h2>
-            <CButton
-              type="submit"
-              // onClick={sendUsername}
-              className="search_tweetButton"
-              color="primary"
-              shape="rounded-pill"
-            >
-              <div className="search_icon">
-                <CIcon icon={cilSearch} size="sm" />
-              </div>
-            </CButton>
-            <input
-              // onChange={(e) => setUsername(e.target.value)}
-              // value={Username}
-              type="text"
-              placeholder="Enter Username"
-            />
-            <UserButton afterSignOutUrl="https://mood-meter-one.vercel.app/" className="userprofile" />
+          <div className="feed-header">
+            <div className="feed-header-1">
+              <h2>Home</h2>
+              <CButton
+                type="submit"
+                // onClick={sendUsername}
+                className="search_tweetButton"
+                color="primary"
+                shape="rounded-pill"
+              >
+                <div className="search_icon">
+                  <CIcon icon={cilSearch} size="sm" />
+                </div>
+              </CButton>
+              <input
+                // onChange={(e) => setUsername(e.target.value)}
+                // value={Username}
+                type="text"
+                placeholder="Enter Username"
+              />  
+              <UserButton afterSignOutUrl="https://mood-meter-one.vercel.app/" className="userprofile" />   
+            </div>
+            <TweetBox />
           </div>
-
-          {/* TweetBox */}
-          <TweetBox />
 
           <Post
             displayName='TusharPuri'
@@ -82,7 +82,7 @@ const V2 = () => {
           <Post
             displayName='TusharPuri'
             userName='TusharP78096727'
-            text='Analysis of depressive tweets of a particular user by adding search functionality. I will try my best to add this feature without using twitter api 🥲'
+            text='Analysis of depressive tweets of a particular user by adding search functionality. I will try my best to add this feature without using twitter api. 😵‍💫'
             label='1'
             imageURL='/pfp.jpg'
           />
