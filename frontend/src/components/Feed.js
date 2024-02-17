@@ -129,7 +129,7 @@ function Feed() {
                 type="text"
                 placeholder="Enter Username"
               />
-              <UserButton afterSignOutUrl="http://localhost:3000/"/>
+              <UserButton afterSignOutUrl="https://mood-meter-one.vercel.app//"/>
             </div>
             <TweetBox />
           </div>

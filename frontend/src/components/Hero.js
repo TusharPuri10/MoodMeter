@@ -24,7 +24,6 @@ const Hero = ({ title, subtitle, image, buttons, user}) => (
           <SignInButton
             style={{ backgroundColor: '#50a3f7' }}
             className="hero-button"
-            // redirectUrl="http://localhost:3000/v1/home"
           />
         )}
       </div>
