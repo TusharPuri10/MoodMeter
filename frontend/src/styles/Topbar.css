@@ -1,7 +1,7 @@
 .topbar
 {
     top: 0;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     background-color: var(--twitter-background);
     position: fixed;
     width: 100%;

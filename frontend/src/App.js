@@ -15,7 +15,7 @@ function App() {
             <Route path="/" element={<LandingPage />} />
             <Route path="/v1/home" element={<SignedIn><Feed /></SignedIn>} />
             <Route path="/v1/about" element={<SignedIn><About/></SignedIn>} />
-            {/* <Route path="/v2" element={<V2/>} /> */}
+            <Route path="/v2" element={<SignedIn><V2/></SignedIn>} />
           </Routes>
       </BrowserRouter>
 

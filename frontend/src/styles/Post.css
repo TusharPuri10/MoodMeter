@@ -3,6 +3,7 @@
     align-items: flex-start;
     border-bottom: 1px solid var(--twitter-background);
     padding-bottom: 10px;
+    padding-left: 0.5rem;
 }
 .profilepic > img{
     margin-bottom:auto;
@@ -15,7 +16,8 @@
     display: flex;
 }
 .post__headerText > h3{
-    padding-left: 3px;
+    margin-left: 0.5rem;
+    padding-top: 0.2rem;
 }
 .post__body{
     flex: 0.8;
@@ -24,7 +26,7 @@
 }
 .post__headerDescription{
     margin-top: 3px;
-    margin-left:7%;
+    margin-left: 2.6rem;
     position: relative;
     word-wrap: break-word;
     /* word-break: break-all; */

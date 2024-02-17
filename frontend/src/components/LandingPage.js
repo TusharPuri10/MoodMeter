@@ -17,7 +17,7 @@ export function LandingPage() {
         image="/hero.png"
         buttons={[
           { text: 'v1', onClick: () => navigate('/v1/home')},
-          // { text: 'v2', onClick: () => navigate('/v2')},
+          { text: 'v2', onClick: () => navigate('/v2')},
         ]}
         user={user}
       />

@@ -15,9 +15,35 @@ import '../styles/Sidebar.css'
 import { useNavigate } from "react-router";
 import Navbar from "./Navbar";
 import Topbar from "./Topbar";
-import { SignOutButton, UserButton } from "@clerk/clerk-react";
+import { UserButton } from "@clerk/clerk-react";
+import { cilChevronTop } from "@coreui/icons";
 
 function Feed() {
+
+  const [isScrolledToTop, setIsScrolledToTop] = useState(true);
+  const handleScrollTop = () => {
+    if (!isScrolledToTop) {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // console.log(window.scrollY + window.innerHeight, document.body.scrollHeight);
+      const isTop = window.scrollY === 0;
+      setIsScrolledToTop(isTop);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   const [Username, setUsername] = useState("");
   const navigate = useNavigate();
   const sendUsername = async (e) => {
@@ -83,30 +109,32 @@ function Feed() {
         </div>
         <div className="feed">
           {/*Header */}
-          <div className="feed__header">
-            <h2>Home</h2>
-            <CButton
-              type="submit"
-              onClick={sendUsername}
-              className="search_tweetButton"
-              color="primary"
-              shape="rounded-pill"
-            >
-              <div className="search_icon">
-                <CIcon icon={cilSearch} size="sm" />
-              </div>
-            </CButton>
-            <input
-              onChange={(e) => setUsername(e.target.value)}
-              value={Username}
-              type="text"
-              placeholder="Enter Username"
-            />
-            <UserButton afterSignOutUrl="https://mood-meter-one.vercel.app/" className="userprofile"/>
+          <div className="feed-header">
+            <div className="feed-header-1">
+              <h2>Home</h2>
+              <CButton
+                type="submit"
+                onClick={sendUsername}
+                className="search_tweetButton"
+                color="primary"
+                shape="rounded-pill"
+              >
+                <div className="search_icon">
+                  <CIcon icon={cilSearch} size="sm" />
+                </div>
+              </CButton>
+              <input
+                onChange={(e) => setUsername(e.target.value)}
+                value={Username}
+                type="text"
+                placeholder="Enter Username"
+              />
+              <UserButton afterSignOutUrl="http://localhost:3000/"/>
+            </div>
+            <TweetBox />
           </div>
 
           {/* TweetBox */}
-          <TweetBox />
 
           {posts.sort((a, b) => b.time - a.time).map((post) => (
             <Post
@@ -119,8 +147,10 @@ function Feed() {
         </div>
         {/* Navbar */}
         <Navbar />
-        <div className="extra">
-        </div>
+        {!isScrolledToTop && <button className="scroll-to-top" onClick={handleScrollTop}>
+            <CIcon icon={cilChevronTop} size="sm" />
+          </button>}
+        <div className="extra"></div>
       </div>
     </div>
   );
