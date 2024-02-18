@@ -8,11 +8,6 @@ nltk.download('stopwords')
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
-# if __name__ == '__main__':
-#   nltk.download('omw-1.4')
-#   nltk.download('stopwords')
-#   nltk.download('wordnet')
-
 model = load_model('model/')
 
 words = dict()
@@ -55,9 +50,6 @@ def message_to_word_vectors(message,word_dict=words):
 
   return np.array(vectors, dtype = float)
 
-
-
-
 def pad_X(X, desired_sequence_length=40):
   X_copy = deepcopy(X)
 
@@ -73,8 +65,3 @@ def pad_X(X, desired_sequence_length=40):
 
 def get_label(tweet):
   return model.predict(pad_X([message_to_word_vectors(tweet)]))[0][0]
-
-# print(get_label("i am now free from depression"))
-# print(get_label("i happy to see my wife die"))
-# print(get_label("i am sad"))
-# print(get_label("i am happy"))

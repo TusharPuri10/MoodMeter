@@ -12,6 +12,7 @@ BuildingModel/__pycache__
 # testing
 /coverage
 backend/glove.6B.50d.txt
+backend/scrapper.py
 
 # production
 /build
