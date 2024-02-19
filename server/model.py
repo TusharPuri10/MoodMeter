@@ -1,16 +1,18 @@
-import numpy as np
+from huggingface_hub import from_pretrained_keras
 from copy import deepcopy
-from tensorflow.keras.models import load_model
-
 import nltk
+import numpy as np
 nltk.download('wordnet')
 nltk.download('stopwords')
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
-model = load_model('model/')
-
+model = from_pretrained_keras("tusharpuri10/moodmeter")
 words = dict()
+
+# Used if model stored in server instead of huggingface
+# from tensorflow.keras.models import load_model
+# model = load_model('model/')
 
 def add_to_dict(d, filename):
   with open(filename,'r',encoding='utf-8') as f:
@@ -65,3 +67,5 @@ def pad_X(X, desired_sequence_length=40):
 
 def get_label(tweet):
   return model.predict(pad_X([message_to_word_vectors(tweet)]))[0][0]
+
+print(get_label("I am happy"))

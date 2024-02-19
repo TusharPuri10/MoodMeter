@@ -1,18 +1,15 @@
 
 # dependencies
-/node_modules
 frontend/node_modules
 frontend/.pnp
 .pnp.js
-backend/env
-backend/__pycache__
-BuildingModel/__pycache__
-.ipynb_checkpoints
+server/env
+server/__pycache__
 
 # testing
 /coverage
-backend/glove.6B.50d.txt
-backend/scrapper.py
+/backend
+/model
 
 # production
 /build
